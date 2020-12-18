@@ -32,9 +32,18 @@ const Form = (props) => {
           dispatch(createPosts(postData))
       }
     
+      clear()
   };
 
-  const clear=()=>{}
+  const clear=()=>{
+    setCurrentId(null)
+    setPostData({  creator: "",
+    title: "",
+    message: "",
+    tags: "",
+    selectedFiles: "",
+  })
+  }
   return (
     <Paper className={classes.paper}>
       <form
@@ -43,7 +52,7 @@ const Form = (props) => {
         className={`${classes.form} ${classes.root}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">Creating a memory</Typography>
+        <Typography variant="h6">{currentId? 'Editing':' Creating'} a memory</Typography>
         <TextField
           name="creator"
           variant="outlined"
@@ -81,7 +90,7 @@ const Form = (props) => {
           fullWidth
           value={postData.tags}
           onChange={(text) => {
-            setPostData({ ...postData, tags: text.target.value });
+            setPostData({ ...postData, tags: text.target.value.split(',') });
           }}
         />
          <div className={classes.fileInput}>
