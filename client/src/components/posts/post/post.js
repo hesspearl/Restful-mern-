@@ -7,6 +7,8 @@ import moment from 'moment';
 import styles from "./style";
 import {deletePost, likePost} from '../../../store/action/posts';
 import {useDispatch} from 'react-redux';
+import Skeleton from '@material-ui/lab/Skeleton';
+import Box from '@material-ui/core/Box';
 
 const Post = ({post, setCurrentId}) => {
   
@@ -16,26 +18,38 @@ const Post = ({post, setCurrentId}) => {
   return (
     <>
       <Card className={classes.card} >
-        <CardMedia className={classes.media}  image={post.selectedFiles} title={post.title} />
-        <div className={classes.overlay} >
-           <Typography variant="h6"> {post.creator} </Typography>
+      {post? <CardMedia className={classes.media}  image={post.selectedFiles} title={post.title} />:
+      <Skeleton variant="rect" width='100%' height={200} style={{ marginBottom: 10}}/> }
+       {post? <div className={classes.overlay} >
+           
+          <Typography variant="h6"> {post.creator} </Typography>:
+          <Skeleton /> 
            <Typography variant="body2"> {moment(post.createdAt).fromNow()} </Typography>
-        </div>
+        </div>:<Skeleton width="60%"/>}
         <div className={classes.overlay2} >
             <Button  style={{color: 'white'}} size="small" onClick={() => setCurrentId(post._id)} >
                 <MoreHorizIcon fontSize="default" />
             </Button>
         </div>
-        <div className={classes.details} >
+        { post ?  <div className={classes.details} >
             <Typography variant="body2" color="textSecondary" >{post.tags.map(tag => `#${tag}`)}</Typography>
-        </div>
-        <Typography className={classes.title} variant="h5" gutterBottom >{post.title}</Typography>
+        </div>:<Skeleton width="50%" style={{ marginBottom: 10}}/>}
+       { post ?
+       <Box>
+         <Typography className={classes.title} variant="h5" gutterBottom >{post.title}</Typography>
         <CardContent>
           <Typography variant="body2"  color="textSecondary" > {post.message} </Typography>
         </CardContent>
+       </Box>
+       :
+       <Box>
+          <Skeleton style={{ marginRight: 10}}/>
+        <Skeleton style={{ marginRight: 10 , marginBottom:10}} />
+       </Box>
+       }
         <CardActions className={classes.cardActions}>
             <Button size="small" color="primary" onClick={() => dispatch(likePost(post._id))} >
-                <ThumbUpAltIcon fontSize="small"/>&nbsp; Like &nbsp; {post.likeCount}
+              <ThumbUpAltIcon fontSize="small"/>&nbsp; Like &nbsp; {post?  post.likeCount:<Skeleton/>}
             </Button>
             <Button size="small" color="primary" onClick={() => dispatch(deletePost(post._id))} >
                 <DeleteIcon fontSize="small"/> Delete
