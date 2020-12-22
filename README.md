@@ -62,7 +62,7 @@ This project is already deploy , run it and test<br> <br>
 
 ---
 
-<h2 align="center"> show me what you can add and Contribute </h2>
+ show me what you can add and Contribute 
 
    ```
    - Fork the project 
