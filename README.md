@@ -37,7 +37,8 @@
 
 
 <br>
-This project is already deploy , run it and test<br> <br>
+This project is already
+[deploy](https://reverent-hugle-d36a17.netlify.app/) , run it and test<br> <br>
 
 
 </p >
