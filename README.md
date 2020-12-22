@@ -30,24 +30,17 @@
     
 
 
+<br>
+<br>
 
 
 
 
-
-
-
+<h2> you can run the website</h2>
+ 
 [This project is already deploy](https://reverent-hugle-d36a17.netlify.app)
-
-, run it and test<br> 
-
-
-
-
-
-
-  
-  <br>
+ 
+ <br> 
 
 
    ```
@@ -74,7 +67,7 @@
 
    - Create a new branch here with your changes:
    $ git checkout -b my-feature
-
+>
    - Save your changes and create a commit message telling you what you did:
    $ git commit -m "feature: My new feature"
 
