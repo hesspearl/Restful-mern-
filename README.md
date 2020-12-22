@@ -38,7 +38,7 @@
 
 <h2> you can run the website</h2>
  
-[This project is already deploy](https://reverent-hugle-d36a17.netlify.app)
+[This project is already deploy](https://memories-forever.netlify.app/)
  
  <br> 
 
