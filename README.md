@@ -1,7 +1,14 @@
 <p align="center"  >
- <strong ><h1 align="center"> This is a Restful application using MERN</h1> </ strong>
- 
+ <strong > 
 
+
+  <h1 align="center"> This is a Restful application using MERN</h1> </ strong>
+  <p align="center">
+  <img align="center"  src="https://trello-attachments.s3.amazonaws.com/5d02107281e39c17911f5405/5fe21c12a7e07a11d45d7587/f4696d686d7a10ad1062ab3336ad8dcc/ezgif.com-gif-maker.gif" />
+ <br>
+ <br>
+ 
+ <img align="center"  src="https://trello-attachments.s3.amazonaws.com/5d02107281e39c17911f5405/5fe21c12a7e07a11d45d7587/ef46760e093075e90b7e442aa1a82060/ezgif.com-gif-maker_(1).gif" />
 </p>
 <p align="center">
   <h2 align="center"> A space to save all memories you wanna keep and not forget forever</h2>
@@ -88,5 +95,5 @@
 
 
 </p>
-<p align="center" >
+
 
