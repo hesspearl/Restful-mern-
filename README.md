@@ -2,9 +2,12 @@
  <strong > 
 
 
-  <h1 align="center"> This is a Restful application using MERN</h1>
-   
+  <h1 align="center"> This is a Restful application using MERN
+ 
 ✍️ [credit to ](https://www.youtube.com/watch?v=ngc9gnGgUdA)👈
+</h1>
+   
+
 
   </strong>
   <p align="center">
