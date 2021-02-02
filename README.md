@@ -2,7 +2,11 @@
  <strong > 
 
 
-  <h1 align="center"> This is a Restful application using MERN</h1> </ strong>
+  <h1 align="center"> This is a Restful application using MERN</h1>
+   
+✍️ [credit to ](https://www.youtube.com/watch?v=ngc9gnGgUdA)👈
+
+  </strong>
   <p align="center">
   <img align="center"  src="https://trello-attachments.s3.amazonaws.com/5d02107281e39c17911f5405/5fe21c12a7e07a11d45d7587/f4696d686d7a10ad1062ab3336ad8dcc/ezgif.com-gif-maker.gif" />
  <br>
